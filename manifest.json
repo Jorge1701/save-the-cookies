@@ -1,0 +1,10 @@
+{
+	"name": "Save The Cookies",
+	"description": "Allows you to have multiple saves of Cookie Clicker that you can load on any of your devices",
+	"version": "0.1",
+	"manifest_version": 3,
+	"permissions": ["storage", "activeTab", "scripting"],
+	"action": {
+		"default_popup": "menu.html"
+	}
+}

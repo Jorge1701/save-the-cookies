@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	</head>
+	<body style="min-width: 300px;">
+		<table>
+			<thead>
+				<tr>
+					<th>Save</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody id="listOfSaves"></tbody>
+		</table>
+
+		<div id="showSave" style="display: none;">
+			<hr>
+			<div>Save '<span id="showSaveName"></span>' <button id="btnHideDetails">x</button></div>
+			<div id="showSaveData"></div>
+		</div>
+
+		<hr>
+
+		<div>
+			<div>Save current as new...</div>
+			<input id="newSaveName" type="text">
+			<button id="newSaveButton">Save</button>
+		</div>
+
+		<template id="saveRow">
+			<tr>
+				<td>
+					<div class="saveName"></div>
+					<div class="saveDate"></div>
+				</td>
+				<td>
+					<button class="btnSave">O</button>
+					<button class="btnLoad">L</button>
+					<button class="btnShowSave">S</button>
+					<button class="btnDelete">D</button>
+				</td>
+			</tr>
+		</template>
+
+	</body>
+
+	<script src="main.js"></script>
+	<script src="saves.js"></script>
+	<script src="game.js"></script>
+</html>
